@@ -7,7 +7,7 @@ date: 1/10
 
 # PHIL 10 Lecture 2
 - ## 1/10
-	- ### Elementary Concepts of Logic
+	- ## Elementary Concepts of Logic
 
 ## Arguments and Validity
 
