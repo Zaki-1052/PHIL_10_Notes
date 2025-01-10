@@ -167,7 +167,7 @@ date: 1/10
 	2. ∴ B ∧ C
 		- Is this a valid argument? 
 			- (Is the conclusion a logical consequence of the premises?)
-				- Surprisingly: yes!
+				- Surprisingly: **yes**!
 - **General fact**: 
 	- If it’s impossible that *P*, then it’s impossible that *P* **and** \[whatever\].
 	- It’s **impossible** for premise 1 (a **contradiction**) to be true.
@@ -190,11 +190,11 @@ date: 1/10
 			- (and so allow for things that are physically impossible)
 - There are no metaphysically possible worlds where logical or mathematical falsehoods are true. 
 	- (A ∧ ¬ A; 1 + 1 = 45) 
-		- They are necessarily false.
+		- They are *necessarily false*.
 
 ### In Action
 
-- **Modal** notions—necessity, possibility, contingency, etc.—are often understood in terms of possible worlds.
+- **Modal** notions—necessity, possibility, contingency, etc.—are often understood in terms of *possible worlds*.
 - ***Necessity*** Definition:
 	- A proposition is **necessary** (or necessarily true) iff it’s true in every possible world.
 - ***Possibility*** Definition
@@ -255,7 +255,7 @@ date: 1/10
 - Consider the following idioms:
 	- “If what you say is true, then I’ll be a monkey’s uncle.”
 	- “I’ll do what you ask when pigs fly”
-	- (or “. . . when hell freezes over.”) 󰇆
+	- (or “. . . when hell freezes over.”)
 - **General idea**: 
 	- if we’re going to accept something impossible/ridiculous, then we might as well accept any other impossible ridiculous thing.
 - These idioms are called “*adynata*”. 
