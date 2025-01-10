@@ -1,7 +1,7 @@
 ---
 course: PHIL 10
 type: lecture
-lecture_num: 2
+lecture_num: "2"
 date: 1/10
 ---
 
@@ -258,7 +258,7 @@ date: 1/10
 	- (or “. . . when hell freezes over.”) 󰇆
 - **General idea**: 
 	- if we’re going to accept something impossible/ridiculous, then we might as well accept any other impossible ridiculous thing.
-- These idioms are called “adynata”. 
+- These idioms are called “*adynata*”. 
 	- Examples from other languages: 
 		- Malay: 
 			- *when cats grow horns;* 
