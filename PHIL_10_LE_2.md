@@ -269,5 +269,5 @@ date: 1/10
 
 
 ---
-Previous: [PHIL 10 Lecture 1](PHIL_10_LE_1)
-Next: [PHIL 10 Lecture 3](PHIL_10_LE_3)
+Previous: [PHIL 10 Lecture 1](PHIL_10_LE_1.md)
+Next: [PHIL 10 Lecture 3](PHIL_10_LE_3.md)
