@@ -79,4 +79,4 @@ P & Q
 
 ---
 
-Next: [PHIL 10 Lecture 2](PHIL_10_LE_2)
+Next: [PHIL 10 Lecture 2](PHIL_10_LE_2.md)
