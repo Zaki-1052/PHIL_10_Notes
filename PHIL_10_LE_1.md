@@ -7,7 +7,7 @@ date: 1/8
 
 # PHIL 10 Lecture 1
 - ## 1/8
-	- ### Logic
+	- ## Logic
 
 ### What is Logic?
 
