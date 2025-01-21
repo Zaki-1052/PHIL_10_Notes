@@ -66,24 +66,9 @@
               "icon": "lucide-file",
               "title": "PHIL_10_LE_4"
             }
-          },
-          {
-            "id": "2e837e0b68b98020",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PHIL_10_LE_4.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PHIL_10_LE_4"
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -139,8 +124,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "7e0544bba040aaec",
@@ -283,13 +267,13 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "65b2e9537c45ceab",
+  "active": "37a232d199f83457",
   "lastOpenFiles": [
-    "PHIL_10_LE_5.md",
-    "PHIL_10_LE_4.md",
     "PHIL_10_LE_3.md",
     "PHIL_10_LE_2.md",
     "PHIL_10_LE_1.md",
+    "PHIL_10_LE_4.md",
+    "PHIL_10_LE_5.md",
     "_templates/lecture_template.md.md",
     "_templates",
     "BILD_5/Lectures/BILD_5_Lectures.md",

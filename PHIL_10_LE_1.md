@@ -41,7 +41,7 @@ date: 1/8
 - Misleading ambiguities resolvable with logic
 	- (Name) who never saw a dog and didn't smile
 		- Every time she saw a dog, she smiled
-		- She never saw a dog and new smiled
+		- She never saw a dog and never smiled
 			- linguistic ambiguity
 	- A toddler has shot a person every week in the US for two years straight
 		- A different toddler in the world
