@@ -58,13 +58,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PHIL_10_LE_4.md",
+                "file": "PHIL_10_LE_3.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PHIL_10_LE_4"
+              "title": "PHIL_10_LE_3"
             }
           }
         ],
@@ -269,10 +269,10 @@
   },
   "active": "37a232d199f83457",
   "lastOpenFiles": [
+    "PHIL_10_LE_4.md",
     "PHIL_10_LE_3.md",
     "PHIL_10_LE_2.md",
     "PHIL_10_LE_1.md",
-    "PHIL_10_LE_4.md",
     "PHIL_10_LE_5.md",
     "_templates/lecture_template.md.md",
     "_templates",

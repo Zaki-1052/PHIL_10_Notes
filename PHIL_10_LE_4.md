@@ -82,7 +82,7 @@ date: 1/17
 
 ### Main Logical Operator
 
-- Every sentence of TFL has a main logical operator
+- Every complex sentence of TFL has a main logical operator
 - Suppose that each sentence is constructed using rules 1–7 of TFL. 
 	- The **main logical operator** of a sentence is the connective that is introduced *last*.
 #### Examples
@@ -91,7 +91,7 @@ date: 1/17
 	- (A → (B ∨ C)) 
 		- → 
 	- ¬(A ∧ B)
-		- ∧
+		- ¬
 	- ((¬E ∨ F)→ ¬¬G)
 		- →
 	- (P ∧ (¬(R ∧ S)↔ Q))
@@ -107,11 +107,16 @@ date: 1/17
 #### Examples
 - What is the scope of the highlighted connective?
 - In ((¬E ∨ F)→ ¬¬G):
-	- Scope of first ¬: E
-	- Scope of ∨: (¬E ∨ F)
-	- Scope of →: ((¬E ∨ F)→ ¬¬G)
-	- Scope of second ¬: ¬G
-	- Scope of third ¬: ¬¬G
+	- Scope of first ¬: 
+		- ¬E
+	- Scope of ∨: 
+		- (¬E ∨ F)
+	- Scope of →: 
+		- ((¬E ∨ F)→ ¬¬G)
+	- Scope of second ¬: 
+		- ¬¬G
+	- Scope of third ¬: 
+		- ¬G
 - ((¬E==<==4 > ∨F)==<==2 > →==<==3 > ¬==<==1 > ¬G)
 - `((¬E<󰇉 > ∨F)<󰇇 > →<󰇈 > ¬<󰇆 > ¬G)`
 - Setting aside A., which of these is *not* a subsentence of the sentence above?
