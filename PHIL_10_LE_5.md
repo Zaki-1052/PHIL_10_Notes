@@ -171,12 +171,12 @@ date: 1/24
 	- For each complex subsentence, its column appears under its main logical connective.
 - The column under the **main connective** tells you the truth value, at each valuation, of the sentence as a whole.
 
-| *P* | *Q* | *P* → (*P* ∨ *Q*) |
-| --- | --- | ----------------- |
-| T   | T   | T                 |
-| T   | F   | T                 |
-| F   | T   | T                 |
-| F   | F   | T                 |
+| *P* | *Q* | *P* → (*P* ∨ *Q*)   |
+| --- | --- | ------------------- |
+| T   | T   | T  **T**  T  *T*  T |
+| T   | F   | T  **T**  T  *T*  F |
+| F   | T   | F  **T**  F  *T*  T |
+| F   | F   | F  **T**  F  *F*  F |
 
 ##### Explained
 
