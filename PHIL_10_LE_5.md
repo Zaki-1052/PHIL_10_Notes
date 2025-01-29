@@ -206,7 +206,7 @@ date: 1/24
 		- first quarter of rows ‘T’, second quarter ‘F’, and repeat.
 	- **Third leftmost atomic**: 
 		- first eighth of rows ‘T’, second eighth ‘F’, and repeat.
-	- If you do this correctly, the rightmost atomic will alternate between ‘T’ and ‘F’ at every row.
+	- If you do this correctly, the rightmost atomic will alternate between ‘T’ and ‘F’ at **every** row.
 - You’re **required** to follow this convention.
 
 ##### Examples
