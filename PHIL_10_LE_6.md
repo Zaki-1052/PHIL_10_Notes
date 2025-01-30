@@ -245,17 +245,13 @@ date: 1/29
 - Could an argument of this form be valid?
 	- A ⊨
 - Note: 
-	- because this argument has no conclusion, its conclusion is trivially false.
+	- because this argument has no conclusion, its conclusion is **trivially false**.
 - So in order for there to be no lines at which the premise is true and the conclusion is (trivially) false, it must be that there are no lines at which the premise is true.
 	- In other words, the premise must be a **contradiction**.
 ##### Examples
 Let’s assess the validity of these arguments using truth tables:
 - A ↔ B, ¬(A ∧ B), A ∨ B ∴ C
 - A ∨ B, B ∨ C, C → A ∴ C ∨ ¬C
-
-
-
-
 
 ---
 
