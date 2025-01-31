@@ -59,17 +59,40 @@ date: 1/31
 
 > [!Definition] ‘Joint logical consistency’ definition:
 > - A<sub>1</sub>, A<sub>2</sub>, . . . , A<sub>n</sub> are **jointly logically consistent** iﬀ there is some valuation which makes them all true.
+- At least one row on their truth table where all the statements main logical operators are true.
 - Is ‘¬P’ logically consistent with ‘¬(P → ¬Q)’? 
 	- First guess: 
 		- A. yes; 
-		- B. no.
+		- B. **==no==**.
+
+| P     Q | ¬ P | ¬(P → ¬Q)          |
+| ------- | --- | ------------------ |
+| T     T | *F* | *T*     **F**    F |
+| T     F | *F* | *F*     **T**   T  |
+| F     T | *T* | *F*     **T**   F  |
+| F     F | *T* | *F*     **T**   T  |
+- NOT jointly logically consistent
+	- truth of one would rule out the other
+- **Intuition:**
+	- A → B
+	- ==
+	- ¬A ∨ B
+		- and
+	- ¬(A → B)
+	- ==
+	- A ∧ ¬B
+		- if conditional is true, negated to false
+		- then P must be true
+		- and antecedent is false
+		- so opposite
+		- can't coexist
 #### Logical Entailment
 - **Logical validity and entailment**:
 > [!Definition] ‘Logical entailment’ definition:
 > - The sentences A<sub>1</sub>, A<sub>2</sub>, . . . , A<sub>n</sub> **logically entail** the sentence *C* if there is *no* valuation of the atomic sentences which makes all of A<sub>1</sub>, A<sub>2</sub>, . . . , A<sub>n</sub> true and *C* false.
 - In other words, the argument from A<sub>1</sub>, A<sub>2</sub>, . . . , A<sub>n</sub> to *C* is **logically valid** iﬀ there’s no row of their joint truth table where all of A<sub>1</sub>, A<sub>2</sub>, . . . , A<sub>n</sub> are true and *C* is false.
 	- In other words, iﬀ it’s logically impossible for the premises to be true while the conclusion is false.
-### Validity symbolism
+### Validity Symbolism
 
 - A new symbol (which is not part of our object language in this class, TFL): 
 	- ### **`‘⊨’`**
