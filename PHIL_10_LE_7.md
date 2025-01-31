@@ -47,12 +47,14 @@ date: 1/31
 	- We make use of **joint truth tables**.
 - If two sentences have **the same column of truth values** under their main logical operators, then they are logically equivalent.
 
-| P     Q | ¬ (P ∧ Q) | ¬ P ∨ ¬ Q |
-| ------- | --------- | --------- |
-| T     T |           |           |
-| T     F |           |           |
-| F     T |           |           |
-| F     F |           |           |
+| P     Q | ¬ (P ∧ Q)       | ¬ P ∨ ¬ Q   |
+| ------- | --------------- | ----------- |
+| T     T | *F*  T  **T** T | F    *F*  F |
+| T     F | *T*  T  **F** F | F    *T*  T |
+| F     T | *T*  F  **F** T | T    *T*  F |
+| F     F | *T*  F  **F** F | T    *T*  T |
+- They are logically equivalent, because each row has the same truth value.
+	- No counter-example.
 #### Logical Consistency
 
 > [!Definition] ‘Joint logical consistency’ definition:
