@@ -1,7 +1,7 @@
 ---
 course: PHIL 10
 type: lecture
-lecture_num: 7
+lecture_num: "7"
 date: 1/31
 ---
 
@@ -12,7 +12,7 @@ date: 1/31
 - Midterm:
 	- Know the convention for the order of valuations
 	- TA Name:
-		- Javier
+		- **Javier** Medina Barrientos
 
 ## Demonstrations with Truth Tables
 ### Uses of Truth Tables
@@ -21,7 +21,8 @@ date: 1/31
 	2. a pair of sentences are **logically equivalent**
 	3. some sentences are **jointly logically consistent**
 	4. some premises **logically entail** a conclusion—i.e. an argument is **logically valid**
-- In all cases, we are concerned with whether the relevant notion holds **in virtue of truth-functional form**.
+- In all cases, we are concerned with whether the relevant notion holds: 
+	- **in virtue of truth-functional form**.
 ### Refresher
 
 > [!Definition] Definition of ‘tautology’:
