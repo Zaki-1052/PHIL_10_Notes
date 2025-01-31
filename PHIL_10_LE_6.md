@@ -23,6 +23,7 @@ date: 1/29
 | T   | F   | F             |
 | F   | T   | T             |
 | F   | F   | T             |
+|     |     |               |
 - D. →
 	- conditional
 		- false if antecedent is true and consequent is false
