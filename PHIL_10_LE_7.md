@@ -92,7 +92,7 @@ date: 1/31
 > - The sentences A<sub>1</sub>, A<sub>2</sub>, . . . , A<sub>n</sub> **logically entail** the sentence *C* if there is *no* valuation of the atomic sentences which makes all of A<sub>1</sub>, A<sub>2</sub>, . . . , A<sub>n</sub> true and *C* false.
 - In other words, the argument from A<sub>1</sub>, A<sub>2</sub>, . . . , A<sub>n</sub> to *C* is **logically valid** iﬀ there’s no row of their joint truth table where all of A<sub>1</sub>, A<sub>2</sub>, . . . , A<sub>n</sub> are true and *C* is false.
 	- In other words, iﬀ it’s logically impossible for the premises to be true while the conclusion is false.
-### Validity Symbolism
+#### Validity Symbolism
 
 - A new symbol (which is not part of our object language in this class, TFL): 
 	- ### **`‘⊨’`**
@@ -102,25 +102,36 @@ date: 1/31
 - Example:
 	- P, (P → (Q ∨ R)), ¬R ⊨ Q
 
-#### Valid Truth Tables
-##### Using truth tables to prove validity
+### Valid Truth Tables
+#### Using truth tables to prove validity
 - **Validity testing procedure**: 
 	- find lines where the conclusion is **false**, and check whether **all** of the premises are true.
 - If there is at least one line where all of the premises are true, and the conclusion is false, then the argument is not valid. 
 	- Otherwise, the argument is valid.
 - First pass: 
 	- is this simple argument valid? 
-		- A. yes; 
+		- A. **==yes==**; 
 		- B. no.
 			- A → B, ¬B ∨ A ∴ B ↔ A
 
-| A     B | A → B | ¬B ∨ A | B ↔ A |
-| ------- | ----- | ------ | ----- |
-| T     T |       |        |       |
-| T     F |       |        |       |
-| F     T |       |        |       |
-| F     F |       |        |       |
-##### Exercise
+| A     B | A → B | ¬B ∨ A     | B ↔ A |
+| ------- | ----- | ---------- | ----- |
+| T     T | .   T | F.   **T** | .   T |
+| T     F | .   F | T.   **T** | .   F |
+| F     T | .   T | F.   **F** | .   F |
+| F     F | .   T | T   **T**  | .   T |
+- no lines of truth table where all premises true and conclusion false
+	- is logically valid
+- intuition:
+	- for any conditional
+		- equivalent to negation of disjunction of antecedent
+			- A → B
+			- ==
+			- ¬A ∨ B
+		- premises are equivalent
+		- can't have different truth values
+			- so they are equal/bidirectional
+#### Exercise
 - ##### **Truth tables and Validity**:
 	- Let’s test whether the following argument is valid: 
 		- P ∨ (P → (¬P ↔ P)) ∴ ¬P
@@ -137,27 +148,39 @@ date: 1/31
 
 | P   | P ∨ (P → (¬ P ↔ P)) | ¬ P |
 | --- | ------------------- | --- |
-|     |                     |     |
-|     |                     |     |
-|     |                     |     |
-|     |                     |     |
+| T   |                     | F   |
+| T   |                     | F   |
+| F   |                     | T   |
+| F   |                     | T   |
+
+| P   | ∨   | (P    | →   | (¬  | P   | ↔     | P   |
+| --- | --- | ----- | --- | --- | --- | ----- | --- |
+| T   | ==T==   | **T** | F   | *F* | T   | **F** | *T* |
+| T   | ==T==   | **T** | F   | *F* | T   | **F** | *T* |
+| F   | ==T==   | **F** | T   | *T* | F   | **F** | *F* |
+| F   | ==T==   | **F** | T   | *T* | F   | **F** | *F* |
 
 ### Conditionals
 
 | *A* | *B* | *A* → *B* |
 | --- | --- | --------- |
-| T   | T   |           |
-| T   | F   |           |
-| F   | T   |           |
-| F   | F   |           |
+| T   | T   | .   T     |
+| T   | F   | .   F     |
+| F   | T   | .   T     |
+| F   | F   | .   T     |
 - Assuming that the following sentences express material conditionals 
 	- (that is, that ‘if...then...’ means the same as ‘→’), 
 - Assess the truth value of the following sentences:
 	1. If apples are animals, then apples have mouths.
+		- **True**
 	2. If apples are mammals, then apples are fruit.
+		- **True**
 	3. If apples are fruit, then apples are mammals.
+		- **False**
 	4. If it’s sunny today, then apples are fruit.
+		- **True**
 	5. If today is Tuesday and today is Wednesday, then apples are mammals.
+		- 
 
 #### Arguments
 ##### Arguments with an empty premise set
