@@ -180,7 +180,7 @@ date: 1/31
 	4. If it’s sunny today, then apples are fruit.
 		- **True**
 	5. If today is Tuesday and today is Wednesday, then apples are mammals.
-		- 
+		- **True**
 
 #### Arguments
 ##### Arguments with an empty premise set
