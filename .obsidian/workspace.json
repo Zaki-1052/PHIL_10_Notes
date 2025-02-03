@@ -105,8 +105,17 @@
               "state": {
                 "file": "PHIL_10_LE_7.md",
                 "mode": "source",
+                "source": false,
                 "backlinks": true,
-                "source": false
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
               },
               "icon": "lucide-file",
               "title": "PHIL_10_LE_7"
@@ -303,7 +312,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "18cfc16e508f9328",
+  "active": "65b2e9537c45ceab",
   "lastOpenFiles": [
     "PHIL_10_LE_6.md",
     "PHIL_10_LE_7.md",
