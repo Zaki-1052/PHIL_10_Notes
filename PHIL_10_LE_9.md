@@ -119,11 +119,11 @@ or
 2 | R  
 3 | (P ∨ Q) ∧ R ∧I 1, 2
 
-### Introduction & Elimination Rules
+#### Introduction & Elimination Rules
 
 - Most of the basic inference rules in our deduction system consist of “**introduction rules**” and “**elimination rules**” for each of the truth-functional connectives.
 	- Let ‘△’ be an arbitrary truth-functional connective.
-#### Introduction
+##### Introduction
 > [!NOTE] Introduction Rules
 > The inference rule △-Introduction allows you to make an inference **to** a sentence whose **main logical connective** is △.
 >(So you’re introducing a new △ into the proof.)
@@ -133,7 +133,7 @@ or
 	- ---
 	3. (P ∧ Q) **∧** R ∧I 1,2
 		- (New conjunction introduced on line 3.)
-#### Elimination
+##### Elimination
 > [!NOTE] Elimination Rules
 > The inference rule △-Elimination allows you to make an inference **from** a sentence whose **main logical connective** is △ (and perhaps other sentences).
 >(So you’re “eliminating” an old △ to move forward.)
@@ -141,6 +141,184 @@ or
 	1. (L ∨ M) **∧** N
 	2. (L ∨ M) ∧E 1
 		- (Old conjunction on line 1 eliminated from line 2.)
+#### Interpreting Rules
+
+- *A* and *B* can be replaced with **any sentence in TFL**, 
+	- including sentences that are logically complex.
+- Lines *m* and *n* need not appear immediately after each other: 
+	- they **can be separated** by other lines of the proof.
+- An inference rule that takes two input sentences applies the same 
+	- **regardless of what order** the lines appear in.
+		- (So *m* and *n* could appear in reversed order.)
+
+### More Inference Rules
+
+#### Disjunction Introduction
+
+- A disjunction is true just in case at least one of its disjuncts is true.
+- So for any A, if we assume A is true, then we can deduce the disjunction of A with literally **any other sentence**.
+- The style of reasoning here:
+	- Example 1:
+		1. Alex is angry.
+		2. ∴ Alex is hungry or Alex is angry.
+			- A little weird, but has to be valid.
+	- Example 2:
+		1. Alex is angry.
+		2. ∴ Alex is angry or the Padres are a football team.
+			- A little weirder, but has to be valid.
+- Remember the truth table for ‘∨’: 
+	- if at least one of the disjuncts is true, the disjunction is true.
+- So the inference is valid.
+- We’ll see later: 
+	- some new disjuncts are more strategic to introduce than others.
+
+$$
+\begin{array}{l|l}
+m & \mathcal{A} \\
+  & \mathcal{A} \lor \mathcal{B} & \lor\text{I } m \\
+\hline
+\text{or} & \\
+\hline
+m & \mathcal{A} \\
+  & \mathcal{B} \lor \mathcal{A} & \lor\text{I } m
+\end{array}
+$$
+
+#### Provability
+- `‘⊢’` is the **provability** symbol: 
+	- from the lefthand side, you can prove the righthand side. 
+		- Premises (separated by commas) go on the left; 
+		- the conclusion goes on the right.
+	- Show: (P ∧ Q) ⊢ (Q ∨ R)
+- Proof:
+
+#### Conditional Elimination
+- Conditional elimination (→E) is sometimes called **modus ponens**:
+
+> [!Proof] →Elimination
+> *m* | A → B
+>*n*  | *A*
+>...| B →E m, n
+- The style of reasoning here:
+	1. If Jane is well, she came to class.
+	2. Jane is well.
+	3. Therefore, Jane came to class.
+- Note that, as usual:
+	- the rule applies the same when the lines **m** and **n** appear in reversed order
+- *A* and *B* can be replaced with any TFL sentences
+- lines *m* and *n* need not appear immediately after each other: 
+	- they might be separated by other lines of the proof.
+- Prove the following:
+	- D, E, (D ∧ E) → F ⊢ F
+		1. D :PR
+		2. E :PR
+		3. (D ∧ E) → F :PR
+		4. D ∧ E :∧I  1,2
+		5. F :→E  3,4
+	- (N ∨ O) → (R ∨ S), M ∧ N ⊢ R ∨ S
+		1. (N ∨ O) → (R ∨ S) :PR
+		2. M ∧ N :PR
+		3. N :∧E 2
+		4. N ∨ O :∨I 3
+		5. R ∨ S :→E 1,4
+
+#### Biconditional Elimination
+<-->E
+$$
+\begin{array}{l|l}
+m & \mathcal{A} \leftrightarrow \mathcal{B} \\
+n & \mathcal{A} \\
+  & \mathcal{B} & \leftrightarrow\text{E } m,n \\
+\hline
+\text{or} & \\
+\hline
+m & \mathcal{A} \leftrightarrow \mathcal{B} \\
+n & \mathcal{B} \\
+  & \mathcal{A} & \leftrightarrow\text{E } m,n
+\end{array}
+$$
+- The style of reasoning here:
+	1. David is angry if and only if Cian is hungry.
+	2. David is angry.
+	3. ∴ Cian is hungry.
+- or
+	1. David is angry if and only if Cian is hungry.
+	2. Cian is hungry.
+	3. ∴ David is angry.
+- Biconditionals behave like conditionals that go in both directions:
+	- Biconditionals’ introduction and elimination rules are almost exactly like →I and →E — 
+		- but you can use them in either direction.
+- Show the following argument:
+	- A ∧ B, A ↔ C ⊢ B ∧ (C ∨ D)
+- Proof:
+	1. A ∧ B
+	2. A ↔ C
+	3. ---
+- Is this a correct use of biconditional elimination?
+	1. C ↔ D
+	2. ¬D
+	3. ¬C ?
+		- NO
+- If you have a biconditional and you have one side of the biconditional, 
+	- you can infer the other side.
+		- ‘¬D’ is not the lefthand side or the righthand side of the biconditional on line 1.
+			- So we don’t have both a biconditional and one side of the biconditional. 
+				- So we’re not in a position to use that rule.
+	- **Objection**: 
+		- But isn’t this a valid inference?
+	- **Reply**:
+		- It is—but with proofs, you have to **prove** that it is, using only the rules.
+			- You can’t just assume it!
+- A proof is a step-by-step breakdown of the reasoning.
+	- Even if the reasoning is obvious to you, the task of a proof is to demonstrate it to someone else—someone who only accepts the specific rules of the deduction system.
+
+#### General Guidelines for Proofs
+- You should always start by trying to **work backwards**: 
+	- thinking about how you’d be able to reach that conclusion.
+		- Example: 
+			- think about what it would take to apply the **introduction** rule 
+				- for the main logical operator of the conclusion.
+- **Remember**: 
+	- for a given argument, you can correctly apply various rules to the premises to infer various sentences. 
+		- But that doesn’t mean you “have most of the proof”.
+	- You can establish twenty lines from the premises, using rules perfectly, and have made **no progress whatsoever** on the proof.
+- Whatever comes between your premises and your conclusion should be a stepping stone that **helps you toward the conclusion**.
+	- Otherwise you’re just muddling around in the dark.
+- Compare: 
+	- I’ve walked ten miles. Does that mean I’m most of the way to Downtown? 
+		- No—not if I’m walking in some random direction, or in circles!
+
+### Inference Rules that use Subproofs
+#### Conditional Introduction
+> [!Proof] →Introduction
+>*m*  |  | *A*
+>.....|   ---
+>*n*  |   | *B*
+>
+>....|  A → B →I m–n
+
+$$
+\begin{array}{l|ll}
+m & \begin{array}{l|l} & \mathcal{A} \\ & \mathcal{B} \end{array} \\
+n & \mathcal{A} \rightarrow \mathcal{B} & \rightarrow\text{I }m\text{-}n
+\end{array}
+$$
+
+- → Introduction is a more complex rule. 
+- Its form:
+	1. Introduce a new temporary assumption: A
+	2. Prove that this additional assumption allows us to establish that B.
+	3. Conclude that, even without the temporary assumption, we may 
+		- deduce the conditional: A → B.
+- This style of reasoning:
+	- ***Suppose** it’s the May 12. Sarah told me the deadline was in the first week of May. So in that case, the deadline will have already passed. Now, I’m not sure what date today actually is. But I do know that **if** it’s May 13th, **then** the deadline has already passed.*
+- To visually represent that we’re adding a new, **temporary** assumption, and seeing what follows from it, we introduce a **subproof**.
+- The extent of the subproof is represented in the Fitch system with a vertical line.
+	- When that line ends, the subproof closes.
+- When we make an inference from a subproof (e.g. A → B), we must
+	- cite the subproof as a whole, e.g. 
+		- “10-12” rather than “10, 11, 12”.
+##### Example
 
 
 ---
