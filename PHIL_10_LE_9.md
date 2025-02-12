@@ -320,6 +320,57 @@ $$
 		- “10-12” rather than “10, 11, 12”.
 ##### Example
 
+- **Refresher**: 
+	- P → Q is logically equivalent to:
+		1. A. P ∨ Q
+		2. B. ¬P ∨ Q
+		3. C. P ∨ ¬Q
+		4. D. ¬P ∨ ¬Q
+	- A helpful rule: 
+		- **reiteration** (R).
+- Given this entailment, we can prove the following:
+	- Q ⊢ P → Q
+		1. -
+#### Citation Rule
+
+
+> [!info] **Citations**
+> Any rule whose citation requires mentioning individual lines can mention any earlier lines, **except** for those lines which occur within a closed subproof.
+> After a subproof ends, you **cannot** make use of individual lines it.
+- **After a subproof ends, you cannot make use of individual lines it.**
+	- Otherwise, the following terrible “proof” would be allowed:
+		1. P
+			2. Q
+			3. Q ∧ Q :∧I 2,2
+		2. 4. Q  ∧E 3
+	- But then we could prove any ‘Q’ from any ‘P’. 
+		- Anything would follow from anything!
+#### Closing a Subproof
+- When you close a subproof, you are discharging the assumptions of that subproof.
+- **Rule**: 
+	- You cannot refer back to any line that was obtained using discharged assumptions.
+		- Once the subproof ends, you can only refer back to the subproof as a whole—
+			- and only using specific rules, like →I, that take subproofs as input.
+#### Subproofs
+
+> [!info] Citations cont.
+> Any rule whose citation requires mentioning an entire subproof can mention any earlier subproof, **except** for those subproofs which occur **within some other** closed subproof.
+- A consequence of this: 
+	- it **never** makes sense to close two subproofs at the same time.
+##### Common mistake with subproofs
+- Remember: 
+	- to prove an argument, its conclusion can’t be inside a subproof.
+		- Otherwise you haven’t shown that the conclusion follows from the premises—
+			- you've at best shown that it follows from the premises plus your temporary assumptions. 
+				- But that’s not what you were asked to prove.
+
+##### Important strategy advice
+- In principle, it is always permissible to open a new subproof with any additional assumption you find helpful.
+	- But if you open a new subproof just because the conclusion would be easier to prove if you had an extra premise, **you’re wasting your time**.
+- **Don’t open a subproof unless** you believe, from working backwards, that you’ll eventually want to be able to apply a **specific rule** that requires a subproof as an input, in order to establish a **specific sentence**.
+	- That specific rule will determine what the **first and last lines** of your subproof ***have*** **to be** in order to use that rule.
+##### Example
+
 
 ---
 
