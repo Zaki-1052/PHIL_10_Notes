@@ -370,6 +370,127 @@ $$
 - **Don’t open a subproof unless** you believe, from working backwards, that you’ll eventually want to be able to apply a **specific rule** that requires a subproof as an input, in order to establish a **specific sentence**.
 	- That specific rule will determine what the **first and last lines** of your subproof ***have*** **to be** in order to use that rule.
 ##### Example
+- Suppose I’m trying to prove that the following argument is valid:
+	- P ⊢ Q → (P ∧ Q)
+		- Often, to prove a conditional, it’ll be helpful to use a subproof that you can use for →I.
+			- But for →I, the subproof should begin with the **antecedent** and establish the **consequent**.
+	1. P
+	2. (P
+	3. ...)
+	4. -
+#### Proving Theorems
+- **Fun fact**: 
+	- we can use subproofs as a means of proving theorems!
+- A theorem is a sentence that you can prove without any premises.
+	- Example: 
+		- let’s prove the following: 
+			- ⊢ A → A.
+	1. 1
+	2. 2
+	3. 3
+		- Do we need a subproof to prove this?
+#### Biconditional Introduction
+$$
+\begin{array}{l|ll}
+i & \begin{array}{l|l} & \mathcal{A} \\ & \mathcal{B} \end{array} \\
+j & \\
+k & \begin{array}{l|l} & \mathcal{B} \\ & \mathcal{A} \end{array} \\
+l & \mathcal{A} \leftrightarrow \mathcal{B} & \leftrightarrow\text{I }i\text{-}j,k\text{-}l
+\end{array}
+$$
+- Biconditional introduction is very similar to conditional introduction, 
+	- except you have to work in both directions:
+		- It’s though you’re establishing 
+			- *A* → *B* and *B* → *A*.
+		- Hence two subproofs.
+- A ∧ B ⊢ A ↔ B
+#### Disjunction Elimination
+$$
+\begin{array}{l|ll}
+m & \mathcal{A} \lor \mathcal{B} & \\
+i & \begin{array}{l|l} & \mathcal{A} \\ & \mathcal{C} \end{array} & \\
+j & & \\
+k & \begin{array}{l|l} & \mathcal{B} \\ & \mathcal{C} \end{array} & \\
+l & \mathcal{C} & \lor\text{E }m,i\text{-}j,k\text{-}l
+\end{array}
+$$
+- An example of the style of reasoning used in disjunction elimination:
+	- *I have either apples or blueberries. Suppose I have apples. That entails that I have fruit. Now, suppose instead that I have blueberries. That also entails that I have fruit. So either way, I have fruit.*
+- Disjunction elimination is sometimes called ‘**proof by cases**’
+	- Introduce a new subproof for each disjunct. 
+		- If something follows from both of the disjuncts considered individually, then it must follow from the disjunction.
+	- Note: when we assume that *A* is true, we’re **not** assuming that *B* is false. 
+		- (And vice versa.)
+	- So no need to consider separately what would follow if both *A* and *B* are true.
+- **Example**:
+	- A, (A → B) ∨ (A → C) ⊢ B ∨ C
+#### Negation and Contradiction
+- For negation introduction and elimination, we make use of the notion of **contradiction**, symbolized as “⊥”
+- We have a contradiction whenever both a sentence and its negation appear within the proof.
+- ¬E
+$$
+\begin{array}{l|ll}
+m & \mathcal{A} & \\
+n & \neg\mathcal{A} & \\
+  & \bot & \neg\text{E }m,n
+\end{array}
+$$
+	- For any sentence A, it’s clear that A and¬A contradict each other:
+		- It cannot be the case that both are true.
+#### Negation Introduction
+- ¬I
+$$
+\begin{array}{l|ll}
+i & \begin{array}{l|l} & \mathcal{A} \\ & \bot \end{array} & \\
+j & \neg\mathcal{A} & \neg\text{I }i\text{-}j
+\end{array}
+$$
+- Negation introduction is often called:
+	- “Reductio ad absurdum”
+	- “Proof by contradiction”
+- **Basic procedure**: 
+	- to prove ¬*A* using this method, assume *A* and prove a contradiction ⊥.
+- If our premises ensure that assuming that *A* leads to a contradiction,
+	- then our premises rule out the truth of A.
+		- So they entail that¬A.
+#### Indirect Proof
+- A closely related inference rule that is also part of our proof system is indirect proof:
+- IP:
+$$
+\begin{array}{l|ll}
+i & \begin{array}{l|l} & \neg\mathcal{A} \\ & \bot \end{array} & \\
+j & \mathcal{A} & \text{IP }i\text{-}j
+\end{array}
+$$
+- Here we temporarily assume a negated sentence ¬A. 
+	- If a contradiction follows, then it must be that¬A is false, and so A is true.
+##### Example: Double Negation
+- Using these two rules, we can show that P ⊢¬¬P and that¬¬P ⊢ P. 
+	- (In other words: P and¬¬P are logically equivalent.)
+		- What rule should we cite on line 4? 
+			- A. ¬E 
+			- B. IP 
+			- C. ¬I
+#### Explosion
+- Recall: 
+	- Given our definition of validity, 
+		- **every argument with contradictory premises is valid**.
+	- (After all: 
+		- *an argument is valid iﬀ it’s impossible for the premises to be true while the conclusion is false*.)
+	- So: 
+		- *a contradiction entails anything and everything*! 
+			- This is the **Principle of Explosion**.
+$$
+\begin{array}{l|ll}
+m & \bot & \\
+  & \mathcal{A} & \text{X }m
+\end{array}
+$$
+	- As with disjunction introduction, 
+		- you’ll find that only some inferences are actually useful.
+### Examples
+
+#### Example 1
 
 
 ---

@@ -1,5 +1,6 @@
 {
   "alwaysUpdateLinks": true,
   "readableLineLength": true,
-  "smartIndentList": true
+  "smartIndentList": true,
+  "showLineNumber": true
 }
