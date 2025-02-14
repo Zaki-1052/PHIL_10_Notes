@@ -30,8 +30,57 @@
               "icon": "lucide-file",
               "title": "PHIL_10_LE_9"
             }
+          },
+          {
+            "id": "539335d11fcdaf5f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PHIL_10_LE_10.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "PHIL_10_LE_10"
+            }
+          },
+          {
+            "id": "9d9beb0237f9a1d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PHIL_10_LE_9.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "PHIL_10_LE_9"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -222,11 +271,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "65b2e9537c45ceab",
+  "active": "539335d11fcdaf5f",
   "lastOpenFiles": [
+    "PHIL_10_LE_9.md",
+    "PHIL_10_LE_10.md",
     "PHIL_10_LE_8.md",
     "PHIL_10_LE_2.md",
-    "PHIL_10_LE_9.md",
     "Screenshot 2025-02-12 at 1.11.58 PM.png",
     "PHIL_10_LE_7.md",
     "PHIL_10_LE_6.md",
