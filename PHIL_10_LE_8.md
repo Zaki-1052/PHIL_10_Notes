@@ -1,7 +1,7 @@
 ---
 course: PHIL 10
 type: lecture
-lecture_num: "8"
+lecture_num: 8
 date: 2/7
 ---
 

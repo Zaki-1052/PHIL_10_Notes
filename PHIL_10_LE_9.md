@@ -251,9 +251,13 @@ $$
 - Show the following argument:
 	- A ∧ B, A ↔ C ⊢ B ∧ (C ∨ D)
 - Proof:
-	1. A ∧ B
-	2. A ↔ C
+	1. A ∧ B :PR
+	2. A ↔ C :PR
 	3. ---
+	4. C   :↔E 2
+	5. B   :∧E 1
+	6. (C ∨ D)   :∨I 4
+	7. B ∧ (C ∨ D)   :∧I 5,6
 - Is this a correct use of biconditional elimination?
 	1. C ↔ D
 	2. ¬D

@@ -8,6 +8,30 @@
         "type": "tabs",
         "children": [
           {
+            "id": "1fe14a35c4a21e50",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PHIL_10_LE_8.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "PHIL_10_LE_8"
+            }
+          },
+          {
             "id": "8e12ae743aa09745",
             "type": "leaf",
             "state": {
@@ -54,33 +78,9 @@
               "icon": "lucide-file",
               "title": "PHIL_10_LE_10"
             }
-          },
-          {
-            "id": "9d9beb0237f9a1d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PHIL_10_LE_9.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "PHIL_10_LE_9"
-            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -271,11 +271,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "539335d11fcdaf5f",
+  "active": "65b2e9537c45ceab",
   "lastOpenFiles": [
     "PHIL_10_LE_9.md",
-    "PHIL_10_LE_10.md",
     "PHIL_10_LE_8.md",
+    "PHIL_10_LE_10.md",
     "PHIL_10_LE_2.md",
     "Screenshot 2025-02-12 at 1.11.58 PM.png",
     "PHIL_10_LE_7.md",
