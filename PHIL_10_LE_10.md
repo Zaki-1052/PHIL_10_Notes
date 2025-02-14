@@ -64,12 +64,13 @@ $$
 > After a subproof ends, you **cannot** make use of individual lines it.
 - **After a subproof ends, you cannot make use of individual lines it.**
 	- Otherwise, the following terrible “proof” would be allowed:
-		1. P
-			1. Q
-			2. Q ∧ Q :∧I 2,2
-		2. 4. Q  ∧E 3
+		- 1. P
+			- 2. Q
+			- 3. Q ∧ Q :∧I 2,2
+		- 4. Q  ∧E 3
 	- But then we could prove any ‘Q’ from any ‘P’. 
 		- Anything would follow from anything!
+	- This isn't valid and isn't allowed.
 #### Closing a Subproof
 - When you close a subproof, you are discharging the assumptions of that subproof.
 - **Rule**: 
@@ -110,9 +111,9 @@ $$
 	- Example: 
 		- let’s prove the following: 
 			- ⊢ A → A.
-	1. 1
-	2. 2
-	3. 3
+	1. (A  :AS
+	2. A   :R 1)
+	3. A → A   :→I 1-2
 		- Do we need a subproof to prove this?
 #### Biconditional Introduction
 $$
