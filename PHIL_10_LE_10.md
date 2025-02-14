@@ -14,10 +14,10 @@ date: 2/14
 #### Conditional Introduction
 > [!Proof] →Introduction
 >*m*  |  | *A*
->.....|   ---
->*n*  |   | *B*
+>....| |---
+>*n*  |..| *B*
 >
->....|  A → B →I m–n
+>...|  A → B →I m–n
 
 $$
 \begin{array}{l|ll}
@@ -28,7 +28,7 @@ $$
 
 - → Introduction is a more complex rule. 
 - Its form:
-	1. Introduce a new temporary assumption: A
+	1. Introduce a new **temporary assumption**: *A*
 	2. Prove that this additional assumption allows us to establish that B.
 	3. Conclude that, even without the temporary assumption, we may 
 		- deduce the conditional: A → B.
@@ -45,7 +45,7 @@ $$
 - **Refresher**: 
 	- P → Q is logically equivalent to:
 		1. A. P ∨ Q
-		2. B. ¬P ∨ Q
+		2. **B. ¬P ∨ Q**
 		3. C. P ∨ ¬Q
 		4. D. ¬P ∨ ¬Q
 	- A helpful rule: 
@@ -53,8 +53,9 @@ $$
 - Given this entailment, we can prove the following:
 	- Q ⊢ P → Q
 		1. -
-#### Citation Rule
+		2. 
 
+#### Citation Rule
 
 > [!info] **Citations**
 > Any rule whose citation requires mentioning individual lines can mention any earlier lines, **except** for those lines which occur within a closed subproof.

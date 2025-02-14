@@ -263,7 +263,7 @@ $$
 	1. C ↔ D
 	2. ¬D
 	3. ¬C ?
-		- NO
+		- No
 - If you have a biconditional and you have one side of the biconditional, 
 	- you can infer the other side.
 		- ‘¬D’ is not the lefthand side or the righthand side of the biconditional on line 1.

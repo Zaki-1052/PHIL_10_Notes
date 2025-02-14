@@ -80,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -271,10 +271,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "8e12ae743aa09745",
+  "active": "539335d11fcdaf5f",
   "lastOpenFiles": [
-    "PHIL_10_LE_10.md",
     "PHIL_10_LE_9.md",
+    "PHIL_10_LE_10.md",
     "PHIL_10_LE_8.md",
     "PHIL_10_LE_2.md",
     "Screenshot 2025-02-12 at 1.11.58 PM.png",
