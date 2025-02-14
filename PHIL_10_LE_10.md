@@ -52,8 +52,10 @@ $$
 		- **reiteration** (R).
 - Given this entailment, we can prove the following:
 	- Q ⊢ P → Q
-		1. -
-		2. 
+		- 1. Q :PR
+			- 2. P :AS
+			- 3. Q :R 1
+		- 4. P → Q   :→I 2-3
 
 #### Citation Rule
 
