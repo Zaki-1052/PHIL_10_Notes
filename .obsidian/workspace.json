@@ -78,9 +78,33 @@
               "icon": "lucide-file",
               "title": "PHIL_10_LE_10"
             }
+          },
+          {
+            "id": "02ef72a627a693a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PHIL_10_LE_11.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "PHIL_10_LE_11"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -137,7 +161,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "7e0544bba040aaec",
@@ -270,11 +295,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "539335d11fcdaf5f",
+  "active": "02ef72a627a693a6",
   "lastOpenFiles": [
+    "PHIL_10_LE_10.md",
+    "PHIL_10_LE_11.md",
     "PHIL_10_LE_9.md",
     "PHIL_10_LE_8.md",
-    "PHIL_10_LE_10.md",
     "PHIL_10_LE_2.md",
     "Screenshot 2025-02-12 at 1.11.58 PM.png",
     "PHIL_10_LE_7.md",
@@ -302,7 +328,6 @@
     "BILD_5/Lectures/BILD_5_LE_3.md",
     "BILD_5/Lectures",
     "BILD_5",
-    "CSE_8A/Labs/CSE_8A_Lab_10.md",
     "CSE_8A/data_types.jpg",
     "CSE_8A/refs_objs.jpeg",
     "Projects",
