@@ -134,7 +134,18 @@ $$
 - Prove: 
 	- ⊢ P ∨ ¬P
 ##### Proof
-(lecture vid)
+$$
+\begin{array}{l|ll}
+1 & D & \text{PR} \\
+2 & \begin{array}{l|l} & C & \text{AS} \\
+3 & C \land D & \land\text{I }1,2 \\
+4 & (C \land D) \lor (\neg C \land D) & \lor\text{I }3 \end{array} \\
+5 & \begin{array}{l|l} & \neg C & \text{AS} \\
+6 & \neg C \land D & \land\text{I }1,5 \\
+7 & (C \land D) \lor (\neg C \land D) & \lor\text{I }6 \end{array} \\
+8 & (C \land D) \lor (\neg C \land D) & \text{LEM }2\text{-}4,5\text{-}7
+\end{array}
+$$
 ### De Morgan’s rules
 - De Morgan’s rules (or laws):
 	- ‘¬(P ∧ Q)’ is logically equivalent to ‘¬P ∨ ¬Q’.
