@@ -90,6 +90,30 @@ $$
 	- ‘Neither’ is equivalent to ‘not this one and not the that one’.
 - Heuristic: 
 	- When you push the negation through the parentheses, you flip the ‘∧’ or ‘∨’.
+$$
+\begin{array}{l|ll}
+m & \neg(\mathcal{A} \land \mathcal{B}) & \\
+  & \neg\mathcal{A} \lor \neg\mathcal{B} & \text{DeM, }m
+\end{array}
+$$
+$$
+\begin{array}{l|ll}
+m & \neg\mathcal{A} \lor \neg\mathcal{B} & \\
+  & \neg(\mathcal{A} \land \mathcal{B}) & \text{DeM, }m
+\end{array}
+$$
+$$
+\begin{array}{l|ll}
+m & \neg(\mathcal{A} \lor \mathcal{B}) & \\
+  & \neg\mathcal{A} \land \neg\mathcal{B} & \text{DeM, }m
+\end{array}
+$$
+$$
+\begin{array}{l|ll}
+m & \neg\mathcal{A} \land \neg\mathcal{B} & \\
+  & \neg(\mathcal{A} \lor \mathcal{B}) & \text{DeM, }m
+\end{array}
+$$
 
 
 ---
