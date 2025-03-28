@@ -2,5 +2,5 @@
   "alwaysUpdateLinks": true,
   "readableLineLength": true,
   "smartIndentList": true,
-  "showLineNumber": true
+  "showLineNumber": false
 }
